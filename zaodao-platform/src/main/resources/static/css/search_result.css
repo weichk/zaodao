@@ -1,0 +1,19 @@
+.result_num{margin:25px 0 10px;}
+.result_num span{color:#ff8900;}
+
+/*搜索结果列表*/
+.search_result_list li{position:relative;margin-bottom:48px;padding:20px;background-color:#fff;overflow:hidden;-webkit-transition: all .3s linear 0s;-o-transition: all .3s linear 0s;transition: all .3s linear 0s;}
+.search_result_list li:last-child {margin-bottom: 0}
+.search_result_list li:hover{-webkit-box-shadow:0 2px 15px rgba(0,0,0,.3);box-shadow:0 2px 15px rgba(0,0,0,.3);}
+.search_result_list .img{width:240px;float:left;}
+.search_result_list .img img{width:240px;height:240px;}
+.search_result_list .con{margin-left:275px;}
+.search_result_list .name{display:inline-block;margin-right:25px;font-size:22px;color:#333;font-weight:bold;}
+.search_result_list .name:hover{color:#ff8900;}
+.search_result_list .location{display:inline-block;margin-left:100px;}
+.search_result_list .location .sprite{margin-right:10px}
+.search_result_list .price{position:absolute;top:70px;right:40px;font-size:24px;color:#333;}
+.search_result_list .btn{position:absolute;top:156px;right:40px;width:120px;height:50px;border-radius:10px;background-color:#ff8900;font-size:18px;line-height:50px;color:#fff;text-align:center;}
+.search_result_list .btn:hover{background-color:#ff7e00}
+.search_result_list .info{margin-top:25px;line-height:22px}
+.search_result_list .info .sprite{margin-right:30px}

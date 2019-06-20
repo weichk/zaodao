@@ -1,0 +1,77 @@
+.pay-method{
+	border-top: 1px solid #dddddd; 
+	padding: 30px 0;
+}
+.pay-method .form_item label{
+	width: auto;
+	vertical-align: 20px;
+	margin: 0 30px 0 10px;
+}
+.pay-method img{
+	width: 80px;
+	height: 80px;
+}
+
+.sure-details{
+	border-radius: 10px;
+}
+.sure-details .layui-layer-btn{
+	padding: 30px 0;
+}
+.sure-details .layui-layer-btn .layui-layer-btn0{
+	width: 100px;
+	height: 30px;
+	margin: 0 84px;
+	padding: 0;
+	border-radius: 5px;
+	border: none;
+	background-color: #ff8900;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+}
+.sure-details .layui-layer-btn .layui-layer-btn1{
+	width: 98px;
+	height: 28px;
+	margin: 0 30px;
+	padding: 0;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	font-size: 14px;
+	line-height: 28px;
+	color: #333;
+	text-align: center;
+}
+.sure-details .layui-layer-setwin .layui-layer-close2{
+	background-position: -180px -31px
+}
+.sure-details .layui-layer-setwin .layui-layer-close2:hover{
+	background-position: -149px -31px;
+}
+.sure-details .sure-details-title{
+	padding: 10px;
+	background-color: #ff8900;
+	color: #FFFFFF;
+	font-size: 18px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.sure-details .sure-details-item{
+	margin: 10px 0 0 0;
+	overflow: hidden;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #666666;
+	line-height: 24px;
+}
+.sure-details .sure-details-item span{
+	float: left;
+	width: 290px;
+}
+.sure-details .sure-details-item span:first-child{
+	width: 90px;
+	padding-right: 10px;
+	text-align: right;
+}

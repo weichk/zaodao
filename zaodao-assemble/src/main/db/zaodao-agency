@@ -1,0 +1,164 @@
+
+-- 创建旅行社表
+DROP TABLE IF EXISTS `zd_travel_agency`;
+CREATE TABLE `zd_travel_agency` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `agency_name` varchar(255) DEFAULT NULL,
+  `contact_name` varchar(255) DEFAULT NULL,
+  `contact_phone` varchar(255) DEFAULT NULL,
+  `license_no` varchar(255) DEFAULT NULL,
+  `user_id` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- 旅行社ID
+ALTER table zd_plat_order_info ADD column  travel_agency_id BIGINT(20);
+-- 预约类型
+ALTER table zd_plat_order_info ADD column  reservation_type VARCHAR(64);
+
+
+DROP TABLE IF EXISTS `zd_order_guide_tag`;
+CREATE TABLE `zd_order_guide_tag` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `order_no` varchar(64) DEFAULT NULL,
+  `user_id` varchar(64) DEFAULT NULL  COMMENT '用户ID',
+  `tour_guide_id` varchar(64) DEFAULT NULL COMMENT '导游ID',
+  `eval_tag_id` bigint(20) DEFAULT NULL  COMMENT '标签ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `zd_order_eval_tag`;
+CREATE TABLE `zd_order_eval_tag` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+	`tag_content` varchar(255) DEFAULT NULL  COMMENT '标签内容',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- 取消原因
+ALTER TABLE zd_plat_order_info ADD COLUMN close_reason_type VARCHAR(32);
+-- 取消原因描述
+ALTER TABLE zd_plat_order_info ADD COLUMN close_reason_desc VARCHAR(255);
+-- (取消)订单分类
+ALTER TABLE zd_plat_order_info ADD COLUMN close_order_call VARCHAR(32);
+
+
+
+
+
+-- 2018-05-10 xh add
+UPDATE  zd_plat_order_info SET reservation_type='personal' WHERE ISNULL(reservation_type)=TRUE;
+
+
+--2018-05-14 xh add
+ALTER TABLE zd_course_record ADD COLUMN record_time BIGINT(20);
+
+--2018-05-15 xh add
+--订单交易流水号
+ALTER TABLE zd_trade_order_info ADD COLUMN order_trade_no NVARCHAR(64);
+
+--2018-05-16 xh add 课程标签
+ALTER TABLE zd_course ADD COLUMN tag_content VARCHAR(255);
+
+--2018-05-16 xh add 报名截止时间和课程时间字段
+ALTER TABLE zd_course ADD COLUMN endline_time timestamp COMMENT '报名截止时间';
+ALTER TABLE zd_course ADD COLUMN course_time timestamp COMMENT '课程时间';
+
+-- 课程类型{报名课程;其他课程}
+ALTER TABLE zd_course ADD COLUMN course_type VARCHAR(32);
+-- 课程时长(报名课程)
+ALTER TABLE zd_course ADD COLUMN sum_record_time BIGINT(20);
+-- 课程文件时长
+ALTER TABLE zd_course_record ADD COLUMN record_time BIGINT(20);
+-- 已报名人数
+ALTER TABLE zd_course ADD COLUMN user_count BIGINT(20);
+-- 课程备注
+ALTER TABLE zd_course ADD COLUMN course_desc VARCHAR(255);
+
+
+--2018-05-21
+-- 次数(1-3次,3次以上)
+ALTER TABLE zd_tour_guide ADD COLUMN bus_recept_count VARCHAR(32) COMMENT '商务接待次数';
+
+-- 和次数(1-3次,3次以上)
+ALTER TABLE zd_tour_guide ADD COLUMN gov_recept_count VARCHAR(32) COMMENT '政务接待次数';
+
+-- 上次修改带团价格时间
+ALTER TABLE zd_tour_guide ADD COLUMN modify_price_time timestamp COMMENT '上次修改带团价格时间';
+
+
+
+
+-- 商务接待开关
+ALTER TABLE zd_customer ADD COLUMN is_bus_recept int(11) DEFAULT '0' COMMENT '是否开启商务接待{0-否,1-是}';
+-- 政务接待开关
+ALTER TABLE zd_customer ADD COLUMN is_gov_recept int(11) DEFAULT '0' COMMENT '是否开启政务接待{0-否,1-是}';
+-- 是否挂靠旅行社
+ALTER TABLE zd_customer ADD COLUMN is_link_angency int(11) DEFAULT '0' COMMENT '是否挂靠旅行社{0-否,1-是}';
+-- 是否具备领队资质
+ALTER TABLE zd_customer ADD COLUMN is_leader int(11) DEFAULT '0' COMMENT '是否具备领队资质{0-否,1-是}';
+
+
+-- 审核意见
+ALTER TABLE zd_customer ADD COLUMN audit_desc VARCHAR(255) COMMENT '审核意见';
+-- 审核结果
+ALTER TABLE zd_customer ADD COLUMN audit_result VARCHAR(64) COMMENT '审核结果{一级审核成功,一级审核失败,二级审核成功,二级审核失败}';
+
+-- 添加课程源类型
+ALTER TABLE zd_course ADD  source_course_type VARCHAR(255);
+UPDATE zd_course  SET source_course_type=course_type;
+UPDATE zd_course SET course_type='official' WHERE course_type='enrolable' AND course_status IN('draft','published');
+
+
+
+-- 服务费
+DROP TABLE IF EXISTS `zd_order_service_fee`;
+CREATE TABLE `zd_order_service_fee` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `fee_name` varchar(255) DEFAULT NULL COMMENT '收费项{约导服务费,用户取消约导}',
+  `fee_scale` varchar(255) DEFAULT NULL COMMENT '收费标准(固定收费,百分比收费)',
+  `fee_amount` bigint(20) DEFAULT NULL COMMENT '收费额度(百分比收费:30表示30%,固定收费30表示30分)',
+  `fee_status` varchar(255) DEFAULT NULL COMMENT '状态{开启,关闭}',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=346 DEFAULT CHARSET=utf8;
+
+
+-- 服务条件
+DROP TABLE IF EXISTS `zd_order_service_condition`;
+CREATE TABLE `zd_order_service_condition` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `fee_id` bigint(20) NOT NULL  COMMENT '服务费ID',
+  `condition_name` varchar(255) DEFAULT NULL COMMENT '条件名(订单状态)',
+  `condition_symbol` varchar(255) DEFAULT NULL COMMENT '条件符号(等于)',
+  `condition_value` varchar(255) DEFAULT NULL COMMENT '条件值(已支付)',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=346 DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE zd_plat_order_info ADD guide_confirm_time timestamp COMMENT '导游确认完成时间';
+
+
+-- 排序
+ALTER TABLE zd_order_service_fee ADD COLUMN fee_sort BIGINT DEFAULT 0;
+
+-- 银行编码
+ALTER TABLE zd_customer_card ADD COLUMN bank_code VARCHAR(32);
+
+-- 文件原名称长度调整为255
+ALTER TABLE ofile MODIFY COLUMN original_name VARCHAR(255);
+
+-- 消息类型
+ALTER TABLE zd_customer_message ADD COLUMN message_type VARCHAR(32);
+-- 订单号
+ALTER TABLE zd_customer_message ADD COLUMN order_no VARCHAR(64);

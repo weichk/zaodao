@@ -1,0 +1,119 @@
+/*导游详情页*/
+.guide_detail{margin-bottom:120px;}
+.detail_sub_title{position:relative;width:338px;margin:50px auto 0;border-top:1px solid #b3b3b3;line-height:15px;text-align:center;}
+.detail_sub_title .t{display:inline-block;position:relative;padding:0 30px;top:-15px;font-size:20px;font-weight:700;line-height:30px;color:#333;background-color:#f1f1f1;}
+.detail_sub_title .info{display:block;position:relative;top:-15px;text-align:center;}
+.detail_l2_title{margin-top:30px;font-size:20px;line-height:1.2;color:#333;}
+
+/*目录*/
+.guide_detail_nav{position:relative;margin-top:15px;border-bottom:1px solid #ff8900;background-color:#fff;overflow:hidden;}
+.guide_detail_nav li{width:19.9%;float:left;}
+.guide_detail_nav a{display:block;padding:25px 0 15px;font-size:16px;line-height:1.2;font-weight:700;text-align:center;}
+.guide_detail_nav .gd_indicator{position:absolute;bottom:0;left:0;width:20%;height:4px;background-color:#ff8900;}
+
+/*导游介绍*/
+.guide_intro{margin-top:25px;padding:30px 50px;background-color:#fff;color:#333;}
+.guide_intro p{margin-bottom:0}
+
+/*导游日历*/
+.guide_calendar{position:relative;margin-top:20px;overflow:hidden;}
+.guide_calendar_nav{position:relative;width:83px;float:left;}
+.guide_calendar_nav .ca_nav a{display:block;position:relative;height:68px;background-color:#443e3d;font-size:15px;line-height:68px;color:#fff;text-align:center;}
+.guide_calendar_nav .ca_nav a:after{content:'';position:absolute;width:68px;height:1px;bottom:0;left:50%;margin-left:-34px;background-color:#696564;}
+.guide_calendar_nav .ca_nav .current{background-color:#ff8900;color:#fff;}
+.guide_calendar_nav .ca_nav li:last-child a:after,.guide_calendar_nav .ca_nav .current:after{display:none}
+.guide_calendar_nav .gd_indicator{display:inline-block;position:absolute;width:0;height:0;right:0;top:50%;margin-top:-6px;border:6px solid transparent;border-right-color:#fff;}
+.guide_calendar_content{width:496px;float:left;}
+.guide_calendar_content .swiper-slide{width:100%}
+.guide_detail .calendar_tips {margin-left: 83px;}
+.guide_detail .w584 .k-calendar .k-days span {cursor:auto;}
+
+/*导游相册*/
+.guide_gallery{position:relative;margin-top:10px;}
+.guide_gallery .slide{width:580px;height:435px;border-radius:10px;text-align:center;overflow:hidden;}
+.guide_gallery .slide img{position:relative;max-width:100%;max-height:100%;top:50%;top:0\9;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
+.page_box{position:relative;width:510px;height:90px;margin:30px auto 0;text-align:center;overflow:hidden;}
+.page_box .slider_page{-webkit-transition:all .3s linear 0s;-o-transition:all .3s linear 0s;transition:all .3s linear 0s;white-space:nowrap;}
+.page_box a{display:inline-block;width:80px;height:80px;float:left;padding:4px;margin:0 6px;border-radius:5px;border:1px solid #ddd;background:transparent;opacity:1;overflow:hidden;-webkit-transition:all .2s linear 0s;-o-transition:all .2s linear 0s;transition:all .2s linear 0s;}
+.page_box a.active,.page_box a:hover{border-color:#666}
+.page_box a img{width:80px;height:80px;border-radius:5px;}
+.guide_gallery .bx-controls .bx-prev,.guide_gallery .bx-controls .bx-next{position:absolute;display:inline-block;width:20px;height:34px;bottom:26px;border-radius:3px;background:url(../images/arrow_w.png) no-repeat;background-color:rgba(0,0,0,.2);background-color:#c1c1c1\9;text-indent:99em;overflow:hidden;-webkit-transition:all .2s linear 0s;-o-transition:all .2s linear 0s;transition:all .2s linear 0s;}
+.guide_gallery .bx-controls .bx-next{right:0;background-position:-20px 0}
+.guide_gallery .bx-controls .bx-prev{left:0;background-position:0 0}
+.guide_gallery .bx-controls .bx-next:hover,.guide_gallery .bx-controls .bx-pre:hover{background-color:rgba(0,0,0,.6);background-color:#606060\9;}
+
+/*推荐线路*/
+.hot_line_item{width:478px;margin:0 auto;}
+.hot_line_item li{margin-bottom:30px;-webkit-transition:all .3s linear 0s;-o-transition:all .3s linear 0s;transition:all .3s linear 0s;}
+.hot_line_item li:last-child{margin-bottom:0}
+.hot_line_item li:hover{-webkit-box-shadow:3px 3px 10px rgba(0,0,0,.3);box-shadow:3px 3px 10px rgba(0,0,0,.3);}
+.hot_line_item .img{display:block;}
+.hot_line_item .img img{width:100%;}
+.hot_line_item .con{padding:15px 20px;border:1px solid #ddd;border-top:none;}
+.hot_line_item .con .t a{font-size:20px;line-height:1.4;color:#333;font-weight:700;}
+.hot_line_item .con .info{margin-top:10px;text-align:right;}
+.hot_line_item .con .info span{display:inline-block;margin-left:58px;}
+.hot_line_item .con .info .sprite{margin-right:5px}
+
+/*预定须知*/
+.booking_tips{padding:28px;margin:20px 0 0 20px;background-color:#fafafa;}
+.booking_tips .detail_sub_title .t{background-color:#fafafa}
+.booking_tips li{position:relative;margin-bottom:35px;padding-left:30px;text-align:justify;}
+.booking_tips li:last-child{margin-bottom:0}
+.booking_tips li:after{content:'';position:absolute;width:4px;height:14px;top:3px;left:0;background-color:#ff8900;}
+
+/*游客留言*/
+.comment{margin-left:20px;}
+.reply_to_guide{position:relative;margin-top:20px;padding:20px;background-color:#fff;}
+.reply_to_guide .top{position:relative;padding-bottom:20px;border-bottom:1px dashed #ddd;overflow:hidden;}
+.reply_to_guide .top .img{display:inline-block;width:60px;height:60px;float:left;border-radius:60px;overflow:hidden;}
+.reply_to_guide .top .img img{position:relative;width:60px;height:60px;border-radius: 60px;}
+.reply_to_guide .reply_textarea{position:relative;width:449px;height:80px;float:left;margin:20px 0 0 15px;margin-left:10px\9;border:none;-webkit-box-shadow:none;box-shadow:none;font-size:18px;line-height:1.4;color:#bbb;}
+.reply_to_guide .reply_textarea:focus{color:#333;}
+.reply_to_guide .foot{position:relative;margin-top:25px;padding-left:75px;}
+.reply_to_guide .foot label{float:left;font-size:14px;line-height:40px;color:#333;}
+.reply_to_guide .foot .valid_code{display:inline-block;position:relative;width:138px;float:left;margin:0 15px 0 20px;height:38px;border:1px solid #ddd;overflow: hidden;}
+.reply_to_guide .foot .valid_text{position:relative;width:100%;height:38px;border:none;padding:0;font-size:14px;margin-left:-29px\9;line-height:38px;color:#bbb;text-indent:8px;}
+.reply_to_guide .foot .valid_code .code{position:absolute;width:72px;height:20px;top:10px;right:0;border-left:1px solid #ddd;text-align:center;}
+.reply_to_guide .foot .valid_code .code img{margin-top:-5px;}
+.reply_to_guide .foot .refresh_code{display:inline-block;font-size:12px;line-height:40px;color:#ff8900;vertical-align:middle;}
+.reply_to_guide .foot .Validform_checktip {left:137px;}
+.reply_to_guide .foot .reply_btn{position:absolute;width:80px;height:40px;top:0;right:0;border-radius:5px;border:none;padding:0;background-color:#ff8900;font-size:16px;line-height:40px;color:#fff;-webkit-transition:all .3s linear 0s;-o-transition:all .3s linear 0s;transition:all .3s linear 0s;}
+.reply_to_guide .foot .reply_btn:hover,.reply_to_guide .foot .reply_btn:active{background-color:#ff7e00}
+.comment ul li{margin-top:30px;padding:20px;background-color:#fafafa;}
+.comment .host{position:relative;padding-bottom:20px;border-bottom:1px dashed #ddd;overflow:hidden;}
+.comment .host .img{position:relative;display:inline-block;width:60px;height:60px;float:left;border:1px solid #ddd;border-radius:60px;overflow:hidden;}
+.comment .host .r{margin-left:78px;}
+.comment .host .r .name{margin-top:5px;font-size:20px;line-height:1.6;color:#333;font-weight:700;}
+.comment .host .r .date{color:#999;}
+.comment .host .r .con{margin-top:15px;}
+.comment .reply{margin-top:15px;padding-left:78px;}
+.comment .reply .con{margin-top:8px;}
+
+/*右侧导游简介*/
+.side_guide_info{padding:30px 29px 85px;border:1px solid #e4e4e4;background-color:#fff;}
+.side_guide_info .guide_price{position:absolute;width:100%;height:90px;top:-90px;left:0;background:url(../images/alpha_black.png) repeat;font-size:36px;line-height:90px;color:#fff;text-indent:38px;z-index:1;}
+.side_guide_info .guide_price span{font-size:24px}
+.side_guide_info .col1,.side_guide_info .col2{padding-bottom:15px;border-bottom:1px dashed #ddd;}
+.side_guide_info .col1 .guide_header{position:relative;width:180px;height:180px;margin:0 auto;border-radius:180px;border:1px solid #e9e9e9;overflow:hidden;}
+.side_guide_info .col1 .guide_header img{border-radius:180px}
+.side_guide_info .col1 .name{position:relative;margin-top:25px;font-size:22px;font-weight:700;color:#333;text-align:center;}
+.side_guide_info .col1 .name .age{position:absolute;top:10px;right:75px;font-size:16px;color:#666;font-weight:400;}
+.side_guide_info .col1 .addr{margin-top:15px;text-align:center;}
+.side_guide_info .col1 .addr .sprite{margin-right:8px;}
+.side_guide_info .col1 p{margin-top:20px;line-height:18px;}
+.side_guide_info .col1 .stars{margin-right:10px;vertical-align:-3px;}
+.side_guide_info .col2{padding-bottom:25px}
+.side_guide_info .col2 li{margin-top:25px;}
+.side_guide_info .col2 li .sprite{margin-right:30px;}
+
+/*预定表单*/
+.side_guide_info .booking_form .t{padding:15px 0;font-size:20px;color:#333;line-height:1.4}
+.side_guide_info .booking_form .date_label{position:relative;overflow:hidden;}
+.side_guide_info .booking_form .date_label span{display:block;width:49.9%;float:left;}
+.side_guide_info .booking_form .person_num_label{margin-top:30px;color:#333;}
+.side_guide_info .booking_form .price{margin-top:30px;text-align:right;}
+.side_guide_info .booking_form .price .num{display:inline-block;margin-left:35px;font-size:34px;line-height:40px;color:#333;font-weight:700;vertical-align:middle;}
+.side_guide_info .booking_form .price .num i{font-size:24px;font-style:normal;}
+.side_guide_info .booking_form .booking_btn{position:relative;width:100%;height:60px;margin-top:30px;padding:0;border-radius:10px;border:none;background-color:#ff8900;font-size:22px;color:#fff;font-weight:700;text-align:center;-webkit-transition:background-color .2s linear 0s;-o-transition:background-color .2s linear 0s;transition:background-color .2s linear 0s;}
+.side_guide_info .booking_form .booking_btn:hover,.side_guide_info .booking_form .booking_btn:active{background-color:#ff7e00;}

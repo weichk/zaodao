@@ -1,0 +1,53 @@
+/*banner*/
+.set_blog_banner{position:absolute;width:760px;top:140px;left:50%;margin-left:-380px;color:#fff;}
+.set_blog_banner .ui_banner_file{display:inline-block;font-size:18px;line-height:1.4;color:#fff;cursor:pointer;}
+.set_blog_banner .ui_banner_file .sprite{margin-right:20px;vertical-align:middle;}
+.set_blog_banner .banner_file{position:absolute;left:100%;clip:rect(0 0 0 0);}
+.set_blog_banner p{margin:15px 0 0 40px;color:#fff;opacity:.7;filter:alpha(opacity=70);}
+
+/*content*/
+.write_blog{position:relative;width:1200px;margin:40px auto 80px;overflow:hidden;}
+.write_blog .left{position:relative;width:750px;float:left;padding:20px 40px 130px;background-color:#fff;margin-left:50px;}
+.write_blog .commen_title{margin-top:0;padding-bottom:10px;font-size:20px}
+
+/*editor*/
+.write_blog .wblog_h1{display:block;width:100%;margin-top:30px;padding-bottom:20px;border:none;border-bottom:1px solid #ddd;font-size:24px;line-height:1.2;color:#bbb;}
+.write_blog .wblog_h1:hover,.write_blog .wblog_h1:focus{border-bottom-color:#ff8900;color:#666;}
+.write_blog .tools{position:relative;margin-top:20px;}
+.write_blog .tools .label{display:inline-block;width:24px;margin-right:20px;text-align:center;cursor:pointer;}
+.write_blog .xfile{position:absolute;clip:rect(0 0 0 0);}
+.write_blog .wblog_textarea{display:block;width:100%;height:400px;margin-top:30px;border:none;font-size:18px;line-height:1.4;color:#bbb;}
+.write_blog .wblog_textarea:hover,.write_blog .wblog_textarea:focus{color:#666;}
+.write_blog .wblog_submit{position:absolute;width:100%;bottom:0;left:0;padding:40px 0 0px;background-color:#f1f1f1;text-align:right;}
+.write_blog .wblog_submit .save_draft{width:120px;margin-right:20px;line-height:50px;font-size:20px;color:#ff8900;text-align:center;}
+.write_blog .wblog_submit .save_draft:hover{color:#ff7e00;}
+.write_blog .wblog_submit .push_blog{width:200px;height:50px;font-size:24px;line-height:50px;}
+
+/*right*/
+.write_blog .right{position:relative;width:210px;float:left;margin:0 0 -9997em 20px;padding:20px 20px 9999em;background-color:#fff;}
+.write_blog .right .r_title{margin-top:40px;padding-bottom:16px;border-bottom:1px solid #ddd;font-size:18px;color:#333;}
+.write_blog .right .r_title.t1{margin-top:10px;border-bottom:none;}
+.write_blog .select{display:inline-block;position:relative;width:93px;}
+.write_blog .select .jqTransformSelectWrapper{width:93px!important;}
+.write_blog .select.i2 .jqTransformSelectWrapper ul{right:0;left:auto;}
+.write_blog .select:after{content:'';position:absolute;width:28px;height:28px;top:1px;right:1px;background:url(../images/angle.png) 50% 50% no-repeat;z-index:1;}
+.write_blog .select select{height:28px;padding:0 35px 0 10px;border:1px solid #ddd;border-radius:2px;background-color:#fff;font-size:14px;line-height:28px;color:#666;}
+.write_blog .select select:hover,.write_blog .select select:active{border-color:#ff8900;}
+.select_type .select.i1{margin-right:15px;}
+.set_cover{position:relative;padding:15px 0;text-align:center;}
+.set_cover .no_cover{font-size:20px;line-height:1.4;color:#bbb;}
+.set_cover .uni_btn,.insert_img .uni_btn{width:90px;height:30px;margin-top:15px;font-size:14px;line-height:30px;}
+.insert_img_list{position:relative;margin-top:10px;overflow:hidden;}
+.insert_img_list li{width:60px;float:left;margin-right:15px;}
+.insert_img_list li:nth-child(3n){margin-right:0}
+.insert_img_list li img{width:60px;height:60px;}
+.write_blog .upload_content_img{display:inline-block;width:90px;margin-top:10px;line-height:30px;font-size:14px;color:#ff8900;}
+.write_blog .upload_content_img:hover{color:#ff7e00;}
+
+/*redpacket*/
+.redpacket{margin-top:50px;}
+.redpacket .t label{display:inline-block;margin-left:15px;font-size:18px;color:#333;}
+.redpacket .col label{display:inline-block;width:70px;font-size:14px;line-height:30px;color:#333;}
+.redpacket .col .text{width:132px;height:28px;border-radius:2px;border:1px solid #ddd;text-indent:10px;font-size:14px;color:#999;}
+.redpacket .col .text:hover,.redpacket .col .text:focus{border-color:#ff8900;color:#333;}
+.redpacket .remain_points {margin-top:5px;font-size: 12px;color:#999;}

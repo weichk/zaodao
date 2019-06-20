@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* 帖子标题 */
+.head { text-align: center; }
+.head-count span{ margin-left:0.5em; font-size:1em; }
+
+/*帖子*/
+.article{ }
+.article p{ font-size:1em; }
+
+/*图标*/
+.sprite {margin-right: 6px; display: inline-block; overflow: hidden; background-repeat: no-repeat; background-image: url(../images/sprite.png); vertical-align: middle;}
+/*阅读数*/
+.icon_eye_bl {width: 22px; height: 19px; background-position: -150px -48px;}
+/*评论数*/
+.icon_dial_bl {width: 20px; height: 19px; background-position: -151px -117px; }
+/*收藏数*/
+.icon_ensh_bl { width: 22px; height: 19px; background-position: -120px -89px; }
+
+/*bootstrap.media */
+.media img{ border-radius:6.25em;-moz-border-radius:6.25em;-webkit-border-radius:6.25em;width:3.5em; height:3.5em; }
+.media .uname{ color:#ff8900; }
+
+/*回复按钮*/
+.uni_btn {display: inline-block;position: relative;height: 2.5em;border-radius: 0.3125em;-moz-border-radius: 0.3125em;-webkit-border-radius:0.3125em;
+    border: none;background-color: #ff8900;line-height: 2.5em;color: #fff !important;text-align: center;-webkit-transition: all .2s linear 0s;transition: all .2s linear 0s; -moz-transition: all .2s linear 0s; -o-transition: all .2s linear 0s;}
+
+/*分页按钮样式*/
+.pages { position: relative; overflow: hidden; }
+.pages span, .pages a { display: inline-block; width: 4.5em; height:1.6em; margin: 0 1px;border-radius:0.125em; -moz-border-radius: 0.125em; -webkit-border-radius: 0.125em;
+    border: 1px solid #ddd; background-color: #fff; font-size: 0.72em; line-height: 1.5em; color: #333; text-align: center;
+}
+
+/*分页*/
+.travel_diary .top .pages{position:absolute;bottom:0;right:0;}
+.travel_diary .footer_pages{position:relative;padding:2.5em 0 4.375em;text-align:center;}
+
+/*快捷回复与发帖*/
+.travel_diary .quik_btns{position:fixed;width:5.625em;bottom:10em;right:5%;z-index:99}
+.travel_diary .quik_btns a{display:inline-block;width:5.625em;height:3.375em;padding:1.125em 0;text-align:center;}
+.travel_diary .quik_btns .goto_reply{background-color:#ff8900;color:#fff;}
+.travel_diary .quik_btns .goto_post{background-color:#fff;color:#ff8900;}
+.travel_diary .quik_btns .sprite{display:block;margin:0 auto 0.625em;}
+
+/*简易回复、回复列表*/
+.reply_content{display:none;position:relative;margin-top:2.5em;padding:1.25em 1.25em 2.5em;background-color:#fafafa;}
+.simple_reply{position:relative;overflow:hidden;}
+.simple_reply .img_head,.simple_reply .img_head img{position:relative;display:inline-block;width:3.75em;height:3.75em;border-radius:3.75em;-moz-border-radius:0.3125em;-webkit-border-radius: 0.3125em;overflow:hidden;}
+.simple_reply .img_head{float:left;}
+.simple_reply .text{position:relative;margin-left:88px;padding:1.125em 1em;border-radius:0.3125em;-moz-border-radius:0.3125em;-webkit-border-radius: 0.3125em;border:1px solid #ddd;background-color:#fff;}
+.simple_reply .text .sreply_con{width:100%;height:4.125em;border:none;}
+.simple_reply .uni_btn{width:5em;height:1.875em;float:right;margin-top:0.9375em;line-height:1.875em}
+.simple_reply .text:before,.simple_reply .text:after{content:'';position:absolute;width:0;height:0;top:1.5625em;border:9px solid transparent;}
+.simple_reply .text:before{left:-1.125em;border-right-color:#ddd;z-index:1;}
+.simple_reply .text:after{border-right-color:#fff;left:-1.0625em;z-index:2;}
+.reply_list li{position:relative;margin:1.875em 0 0 6.0625em;padding-top:1.25em;border-top:1px dashed #ddd;}
+.reply_list .top{position:relative;overflow:hidden;}
+.reply_list .top .name{display:inline-block;margin-right:0.625em;}
+.reply_list .top .text{display:inline;}
+.reply_list .f{margin-top:0.625em;text-align:right;}
+.reply_list .f .date{color:#999;}
+.hide_reply_list{display:block;width:2em;height:1.4375em;margin:2.5em auto 0;background:url(../images/arrow_up.png) 50% 50% no-repeat;}
+
+/*回复*/
+.reply_post{position:relative;background-color:#fff;overflow:hidden;}
+.reply_post .right{padding-bottom:2.5em;}
+.reply_post .editor_tools .tools{display:inline-block;margin-right:1.25em;vertical-align:middle;}
+.reply_post .form_item{margin-top:1.875em;}
+.reply_post .reply_textarea{width:100%;height:5em;padding:0;border:none;background-color:#fff;font-size:1.125em;line-height:1.4;color:#bbb;}
+.reply_post .reply_textarea:hover,.reply_post .reply_textarea:focus{color:#333;}
+.reply_post .reply_btn{display:inline-block;width:5em;height:2.5em;border-radius:0.3125em;-moz-border-radius:0.3125em;-webkit-border-radius: 0.3125em; border:none;background-color:#ff8900;font-size:1em;color:#fff;line-height:2.5em;-webkit-transition:all .3s linear 0s;transition:all .3s linear 0s;-moz-transition: all .2s linear 0s; -o-transition: all .2s linear 0s;}
+.reply_post .reply_btn:hover,.reply_post .reply_btn:active{background-color:#ff7e00;}

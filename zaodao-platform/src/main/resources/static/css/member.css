@@ -1,0 +1,31 @@
+/*frame*/
+.member_frame{position:relative;width:1000px;margin:95px auto;overflow:hidden;}
+.frame_left{position:relative;width:200px;float:left;padding-bottom:60px;background-color:#fff;clear:left;}
+.frame_right{width:770px;float:left;margin-left:30px;}
+
+/*左侧菜单*/
+.member_simple_info{margin-top:25px;text-align:center;}
+.member_simple_info .img{display:block;position:relative;width:100px;height:100px;margin:0 auto;border-radius:100px;background:url(../images/default_header.png) 50% 50% no-repeat;overflow:hidden;}
+.member_simple_info .img img{position:relative;width:100px;height:100px;border-radius:100px}
+.member_simple_info .img .no_header{display:none;position:relative;width:100px;height:100px;border-radius:100px;background:url(../images/alpha_grey.png) repeat;font-size:18px;line-height:100px;color:#f1f1f1;text-align:center;}
+.member_simple_info .img:hover .no_header{display:block;}
+.member_simple_info .name{position:relative;margin-top:20px;font-size:20px;line-height:30px;color:#333;text-align:center;}
+.member_simple_info .name .sprite{position:absolute;top:0;right:20px;}
+.member_simple_info .name .hide{display:none;}
+.member_simple_info .level{position:relative;margin-top:5px;font-size:16px;line-height:20px;color:#999;}
+.member_simple_info .level .medal{position:absolute;width:14px;height:20px;top:0;left:40px;background:url(../images/medal.png) no-repeat;}
+.member_nav{margin-top:35px;}
+.member_nav a,.member_nav .lv1{display:block;position:relative;height:60px;padding-left:69px;font-size:16px;line-height:60px;color:#333;outline:none;}
+.member_nav a.grey{color:#666;}
+.member_nav a .sprite,.member_nav .lv1 .sprite,.member_nav a .icon{position:absolute;top:20px;left:30px;}
+.member_nav a:hover,.member_nav a.active{background-color:#fff4e7}
+.member_nav a.active:before{content:'';position:absolute;width:4px;height:40px;top:10px;left:0;background-color:#ff8900;}
+a.be_guide{display:block;position:relative;width:138px;height:38px;margin:57px auto 0;border-radius:5px;border:1px solid #ff8900;font-size:16px;line-height:38px;color:#ff8900;text-align:center;}
+a.be_guide:hover{border-color:#ff7e00;color:#ff7e00;}
+.icon_bz{position:absolute;width:20px;height:18px;top:20px;left:30px;background:url(../images/icon_bz.png) 50% 50% no-repeat;}
+
+/*弹窗：编辑昵称*/
+.popup_edit_username{border-radius:10px!important;}
+.popup_edit_username .form_edit_username{margin:55px 55px 0;}
+.popup_edit_username .form_edit_username .label{width:90px}
+.popup_edit_username{display:block;width:200px;height:50px;margin:50px auto 0;font-size:20px;}

@@ -1,0 +1,40 @@
+.pay_detail_con{position:relative;width:920px;margin:116px auto 104px;padding:30px 40px 45px;background-color:#fff;-webkit-box-shadow:0 15px 20px -10px rgba(0,0,0,.15);box-shadow:0 15px 20px -10px rgba(0,0,0,.15);}
+
+/*header*/
+.pay_detail_con .head{position:relative;padding-bottom:15px;background:url(../images/title_bg.png) 100% 100% no-repeat;}
+.pay_detail_con .head .t{font-size:20px;line-height:1.4;color:#fe6c00;font-weight:400;}
+.pay_detail_con .goods_head{position:relative;margin-top:30px;overflow:hidden;}
+.pay_detail_con .goods_head span{display:inline-block;float:left;margin-right:20px;font-size:16px;color:#999;}
+.pay_detail_con .goods_head .i1{width:320px;}
+.pay_detail_con .goods_head .i2{width:245px;}
+.pay_detail_con .goods_head .i3{width:170px;}
+.pay_detail_con .goods_head .cancel_check{position:absolute;display:inline-block;top:0;right:55px;}
+
+/*pay_detail_col1*/
+.pay_detail_col1{padding:30px 0;border-bottom:1px solid #ddd;}
+.pay_detail_col1 .img{width:200px;float:left;}
+.pay_detail_col1 .img img{width:200px;height:200px;}
+.pay_detail_col1 .con{position:relative;margin-left:240px;}
+.pay_detail_col1 .con .item{position:relative;}
+.pay_detail_col1 .con .label{display:inline-block;width:100px;vertical-align:middle;}
+.pay_detail_col1 .con .name{display:inline-block;font-size:22px;line-height:1.2;color:#333;}
+.pay_detail_col1 .con .location{display:inline-block;margin-left:30px;}
+.pay_detail_col1 .con .location .sprite{margin-right:5px}
+.pay_detail_col1 .con .price{display:inline-block;margin-left:218px;font-size:20px;line-height:1.4;color:#333;}
+.pay_detail_col1 .con .total{display:inline-block;margin-left:30px;font-size:20px;color:#333;vertical-align:middle;}
+.pay_detail_col1 .con .total em{display:inline-block;margin:0 5px;font-style:normal;}
+
+/*pay_detail_col2*/
+.pay_detail_col2{padding-top:30px;}
+.pay_detail_col2 .t{font-size:18px;line-height:1.2;color:#333;font-weight:400;}
+.pay_detail_col2 label{display:inline-block;width:105px;font-size:14px;line-height:40px;color:#333;vertical-align:top;}
+.pay_detail_col2 .form_item{position:relative;margin:0 0 20px 240px;}
+.pay_detail_col2 .form_item .text{width:258px;height:38px;border:1px solid #ddd;font-size:14px;line-height:38px;color:#333;text-indent:18px;}
+.pay_detail_col2 .Validform_checktip{left:100px;}
+.pay_detail_col2 .form_item .textarea{width:298px;height:78px;padding:10px 18px;border:1px solid #ddd;font-size:14px;color:#bbb;}
+.pay_detail_col2 .form_item .text:hover,.pay_detail_col2 .form_item .text:focus,.pay_detail_col2 .form_item .textarea:hover,.pay_detail_col2 .form_item .textarea:focus{border-color:#ff8900;color:#333;}
+.pay_detail_col2 .price{margin-top:30px;padding:2px 12px 0 0;border-top:1px solid #ddd;font-size:20px;line-height:36px;color:#333;text-align:right;}
+.pay_detail_col2 .price .n{display:inline-block;font-size:16px;color:#f54e39;vertical-align:middle;}
+.pay_detail_col2 .price .n em{font-size:24px;font-style:normal;}
+.pay_detail_col2 .paynow_btn {display:block;width:200px;height:50px;margin:60px auto 0;border:none;border-radius:5px;background-color:#ff8900;font-size:20px;color:#fff;line-height:50px;-webkit-transition:all .3s linear 0s;transition:all .3s linear 0s;}
+.pay_detail_col2 .paynow_btn :hover{background-color:#ff7e00}

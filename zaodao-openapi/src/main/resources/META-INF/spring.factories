@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.acooly.zaodao.openapi.OpenapiDocIntegrationConfig
+
+com.acooly.core.common.boot.component.ComponentInitializer=\
+com.acooly.zaodao.openapi.OpendocIntegrationComponentInitializer

@@ -1,0 +1,65 @@
+/*layout*/
+.guide_club_home{margin-bottom:70px;overflow:hidden;}
+.gch_left{width:800px;float:left;margin:20px 0 0 20px;}
+.gch_right{width:380px;float:left;margin:20px 0 0 20px;}
+
+/***************************
+ * left
+ **************************/
+.gch_lt{position:relative;margin-top:55px;border-top:1px solid #333;line-height:15px;text-align:center;}
+.gch_lt span{display:inline-block;position:relative;padding:0 30px;top:-15px;font-size:20px;font-weight:700;line-height:30px;color:#333;background-color:#fff;}
+.gch_left .intro{color:#999;text-align:center;}
+
+/*tab nav*/
+.gch_slide_tabs{position:relative;margin-top:25px;border:1px solid #ddd;border-bottom-color:#ff8900;overflow:hidden;}
+.gch_slide_tabs li{width:33.333333%;float:left;}
+.gch_slide_tabs a{display:block;height:39px;font-size:18px;line-height:39px;text-align:center;}
+.gch_slide_tabs .current{color:#ff8900;}
+.gch_indicator{position:absolute;width:0;height:0;bottom:0;left:30px;margin-left:-6px;border:6px solid transparent;border-bottom-color:#ff8900;}
+
+/*tab content*/
+.gch_slide_content{position:relative;margin-top:20px;overflow:hidden;}
+.gch_slide_content .img{position:relative;width:250px;float:left;}
+.gch_slide_content .img img{width:250px;height:250px;}
+.gch_slide_content .item .con{margin-left:280px;}
+.gchl_list li{position:relative;margin-bottom:12px;padding:0 0 10px 5px;border-bottom:1px solid #ddd;}
+.gchl_list li:last-child{border-bottom:none}
+.gchl_list li a{display:block;margin-right:100px;font-size:16px;color:#333;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.gchl_list li a:hover{color:#ff8900;}
+.gchl_list .date{position:absolute;top:0;right:0;font-size:16px;color:#999;}
+
+/***************************
+ * right
+ **************************/
+
+/*slider*/
+.gch_slide_content .bx-pager{position:absolute;width:250px;bottom:15px;left:0;line-height:0;text-align:center;z-index:2;}
+ .gch_slide_content .bx-pager-item{display:inline-block;}
+.gch_slide_content .bx-pager-item .bx-pager-link{display:inline-block;width:10px;height:10px;margin:0 8px;border-radius:10px;border:1px solid #999;background:url(../images/alpha_w2.png)\9;text-indent:-99em;overflow:hidden;}
+.gch_slide_content .bx-pager-item .bx-pager-link.active{background:#b5b7b6;}
+
+.gch_right_t{border-bottom:1px solid #333;}
+.gch_right_t span{display:inline-block;margin-bottom:-1px;padding-bottom:15px;border-bottom:7px solid #ff8900;font-size:18px;line-height:1;color:#333;}
+
+/*新闻列表*/
+.gch_news_list li{position:relative;margin-top:25px;padding:0 0 25px 27px;border-bottom:1px dashed #ddd;}
+.gch_news_list li:last-child{border-bottom:none;}
+.gch_news_list li:before{content:'';position:absolute;width:6px;height:20px;top:5px;left:0;background-color:#ff8900;}
+.gch_news_list a{display:block;font-size:16px;line-height:1.2;color:#333;}
+.gch_news_list a:hover{color:#ff8900;}
+
+/*话题排行*/
+.hot_topic li{position:relative;margin:10px 0 25px;padding:0 0 30px 68px;border-bottom:1px dashed #ddd;}
+.hot_topic li:last-child{padding-bottom:0;border-bottom:none;}
+.hot_topic .n{position:absolute;width:48px;height:48px;left:0;top:0;border-radius:3px;background-color:#333;font-size:24px;line-height:48px;color:#fff;font-style:normal;text-align:center;}
+.hot_topic .t{display:block;font-size:18px;line-height:1;color:#333;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.hot_topic .t:hover{color:#ff8900;}
+.hot_topic .info{position:relative;margin-top:8px;color:#999;}
+.hot_topic .info .view{position:absolute;min-width:68px;top:0;right:10px;}
+.hot_topic .info .view .sprite{margin-right:8px;}
+
+/*右侧浮动按钮*/
+.fix_right_btn{position:fixed;width:110px;height:330px;top:50%;right:0;margin-top:-165px;z-index:999}
+.fix_right_btn a{display:block;height:73px;border-radius:10px 0 0 10px;border:1px solid #ddd;padding:23px 0 12px 7px;background-color:#fff;font-size:16px;line-height:1;text-align:center;-webkit-transition:all .2s linear 0s;transition:all .2s linear 0s;}
+.fix_right_btn a:hover {-webkit-box-shadow: inset 5px -5px 10px rgba(0,0,0,.1);box-shadow: inset 0 -5px 10px rgba(0,0,0,.1);}
+.fix_right_btn a .sprite{display:block;margin:0 auto 10px;}

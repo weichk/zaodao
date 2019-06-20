@@ -1,0 +1,131 @@
+/*public*/
+.travel_diary{margin-bottom:80px;}
+.travel_diary .top{position:relative;overflow:hidden;}
+.travel_diary .top .pages{position:absolute;bottom:0;right:0;}
+.travel_diary .item{position:relative;margin-top:20px;background-color:#fff;}
+.travel_diary .left{position:absolute;width:199px;height:100%;left:0;top:0;border-right:1px solid #ddd;}
+.travel_diary .right{position:relative;width:740px;margin-left:200px;padding:25px 30px 70px;}
+
+/*快捷回复与发帖*/
+.travel_diary .quik_btns{position:fixed;width:90px;bottom:160px;right:5%;z-index:99}
+.travel_diary .quik_btns a{display:inline-block;width:90px;height:54px;padding:18px 0;text-align:center;}
+.travel_diary .quik_btns .goto_reply{background-color:#ff8900;color:#fff;}
+.travel_diary .quik_btns .goto_post{background-color:#fff;color:#ff8900;}
+.travel_diary .quik_btns .sprite{display:block;margin:0 auto 10px;}
+
+/*日志左侧作者信息*/
+.travel_diary .author_info{text-align:center;}
+.travel_diary .author_info .img,.travel_diary .author_info .img img{display:inline-block;position:relative;width:100px;height:100px;border-radius:100px;overflow:hidden;}
+.travel_diary .author_info .img {margin-top: 25px}
+.travel_diary .author_info .guide_id{position:relative;margin-top:20px;font-size:20px;color:#333;}
+.travel_diary .author_info .poster{font-size:12px;color:#ff8900;text-align:center;}
+.travel_diary .author_info .level{position:relative;margin-top:10px;color:#999;}
+.travel_diary .author_info .level .medal{display:inline-block;position:absolute;width:14px;height:20px;left:40px;top:3px;background:url(../images/medal.png) no-repeat;}
+.travel_diary .author_info .info_list{position:relative;margin-top:25px;overflow:hidden;}
+.travel_diary .author_info .info_list li{width:98px;float:left;border-right:1px solid #ddd;font-size:14px;}
+.travel_diary .author_info .info_list li:last-child{border-right:none;}
+.travel_diary .author_info .info_list .num{color:#999;}
+.travel_diary .author_info .honor{margin-top:20px}
+.travel_diary .author_info .honor .t{margin:0 16px;border-bottom:1px solid #ddd;font-size:14px;line-height:2;color:#333;text-align:left;}
+.travel_diary .author_info .honor_medals{position:relative;margin:0 10px;}
+.travel_diary .author_info .honor_medals li{position:relative;width:20%;float:left;margin-top:8px;text-align:center;cursor:pointer;}
+.travel_diary .author_info .honor_medals li .title{display:none;position:absolute;width:80px;height:15px;bottom:100%;left:50%;margin-left:-40px;border:1px solid #ddd;border-radius:3px;background-color:#fff;font-size:12px;line-height:15px;color:#333;text-align:center;z-index:1;}
+.travel_diary .author_info .honor_medals li:hover .title{display:block;}
+
+/*日志内容*/
+.travel_diary_list .diary_con{min-height:235px;}
+.travel_diary_list .diary_con .stamp{position:absolute;top:37px;left:492px;z-index:10;}
+.travel_diary_list .diary_con .title{position:relative;padding-bottom:15px;border-bottom:1px solid #ddd;font-size:24px;line-height:1.4;color:#333;}
+.travel_diary_list .diary_con .info{position:relative;margin-top:5px;color:#999;}
+.travel_diary_list .diary_con .info .r{position:absolute;top:0;right:0;}
+.travel_diary_list .diary_con .info .r span{display:inline-block;min-width:70px;margin-left:10px;}
+.travel_diary_list .diary_con .info .r .sprite{margin-right:6px;}
+.travel_diary_list .diary_con .con{padding-top:25px;padding-bottom:60px}
+.travel_diary_list .diary_con .con p{font-size:18px;color:#333;}
+.travel_diary_list .diary_con .reply_col{position:relative;margin-top:10px;text-align:right;}
+.travel_diary_list .diary_con .btn_reply .sprite{margin-right:15px;}
+.travel_diary_list .diary_con .btn_award{display:inline-block;margin-left:35px;color:#ff8900;outline:none;}
+.travel_diary .footer_pages{position:relative;padding:40px 0 70px;text-align:center;}
+
+/*置顶、精*/
+.travel_diary_list .diary_con .stick_top,.travel_diary_list .diary_con .stick_great{display:inline-block;margin-right:10px;padding:0 5px;border-radius:3px;font-size:12px;line-height:19px;color:#fff;vertical-align:middle;}
+.travel_diary_list .diary_con .stick_top{background-color:#ff8900;}
+.travel_diary_list .diary_con .stick_great{background-color:#00c0bf;}
+
+/*设置图章*/
+.travel_diary_list .diary_con .set_stamp{position:absolute;width:80px;top:10px;right:90px;text-align:center;}
+.travel_diary_list .diary_con .set_stamp_btn{display:block;font-size:16px;color:#fe6c00;cursor:pointer;}
+.travel_diary_list .diary_con .set_stamp_list{display:none;position:absolute;width:96px;top:32px;left:-8px;padding:10px 0;border-radius:5px;border:1px solid #ddd;background-color:#fff;-webkit-box-shadow:1px 1px 3px rgba(0,0,0,.1);box-shadow:1px 1px 3px rgba(0,0,0,.1);z-index:99;}
+.travel_diary_list .diary_con .set_stamp_list .arrow_manage{position:absolute;width:18px;height:9px;bottom:100%;left:50%;margin-left:-9px;background:url(../images/arrow_manage.png) 0 0 no-repeat;}
+.travel_diary_list .diary_con .set_stamp_list li{margin:5px 0 0;text-align:center;width:50%;float: left;}
+.travel_diary_list .diary_con .set_stamp_list li a{display:block;padding:3px 0;font-size:14px;outline:0 none;}
+
+/*管理*/
+.travel_diary_list .diary_con .manage{position:absolute;width:60px;top:10px;right:0;text-align:center;}
+.travel_diary_list .diary_con .manage_blogs{display:block;font-size:16px;color:#fe6c00;cursor:pointer;}
+.travel_diary_list .diary_con .manage_list{display:none;position:absolute;width:96px;top:32px;left:-20px;padding:10px 0;border-radius:5px;border:1px solid #ddd;background-color:#fff;-webkit-box-shadow:1px 1px 3px rgba(0,0,0,.1);box-shadow:1px 1px 3px rgba(0,0,0,.1);z-index:99;}
+.travel_diary_list .diary_con .manage_list .arrow_manage{position:absolute;width:18px;height:9px;bottom:100%;left:50%;margin-left:-9px;background:url(../images/arrow_manage.png) 0 0 no-repeat;}
+.travel_diary_list .diary_con .manage_list li{margin:5px 0 0;text-align:center;}
+.travel_diary_list .diary_con .manage_list li a{display:block;padding:3px 0;font-size:14px;outline:0 none;}
+
+/*简易回复、回复列表*/
+.reply_content{display:none;position:relative;margin-top:40px;padding:20px 20px 40px;background-color:#fafafa;}
+.simple_reply{position:relative;overflow:hidden;}
+.simple_reply .img_head,.simple_reply .img_head img{position:relative;display:inline-block;width:60px;height:60px;border-radius:60px;overflow:hidden;}
+.simple_reply .img_head{float:left;}
+.simple_reply .text{position:relative;margin-left:88px;padding:18px 16px;border-radius:5px;border:1px solid #ddd;background-color:#fff;}
+.simple_reply .text .sreply_con{width:100%;height:66px;border:none;}
+.simple_reply .uni_btn{width:80px;height:30px;float:right;margin-top:15px;line-height:30px}
+.simple_reply .text:before,.simple_reply .text:after{content:'';position:absolute;width:0;height:0;top:25px;border:9px solid transparent;}
+.simple_reply .text:before{left:-18px;border-right-color:#ddd;z-index:1;}
+.simple_reply .text:after{border-right-color:#fff;left:-17px;z-index:2;}
+.reply_list li{position:relative;margin:30px 0 0 97px;padding-top:20px;border-top:1px dashed #ddd;}
+.reply_list .top{position:relative;overflow:hidden;}
+.reply_list .top .name{display:inline-block;margin-right:10px;}
+.reply_list .top .text{display:inline;}
+.reply_list .f{margin-top:10px;text-align:right;}
+.reply_list .f .date{color:#999;}
+.hide_reply_list{display:block;width:32px;height:23px;margin:40px auto 0;background:url(../images/arrow_up.png) 50% 50% no-repeat;}
+
+/*打赏*/
+.blog_award{display:block;width:100px;height:40px;margin:0 auto;border-radius:40px;background-color:#ff8900;text-align:center;-webkit-transition:background-color .2s linear 0s;transition:background-color .2s linear 0s;}
+.blog_award:hover{background-color:#ff7e00}
+.blog_award .icon{display:inline-block;width:18px;height:19px;margin:10px 0;background:url(../images/icon_award_0809.png) no-repeat;vertical-align:middle;}
+.blog_award .word{display:inline-block;margin-left:10px;padding-left:10px;border-left:1px solid #ffb866;font-size:14px;line-height:16px;color:#fff;vertical-align:middle;}
+.award_info{margin-top:25px;font-size:18px;}
+.award_pepole{position:relative;margin-top:30px;padding:30px 0 0 6px;background-color:#faf7f7;}
+.award_pepole:after{content:'';position:absolute;left:50%;top:-24px;margin-left:-12px;border:12px solid transparent;border-bottom-color:#faf7f7;}
+.award_list{position:relative;overflow:hidden;}
+.award_list li{width:40px;float:left;margin:0 0 30px 20px;}
+.award_list li a{display:block;}
+.award_list li a img{position:relative;width:40px;height:40px;border-radius:40px;overflow:hidden;}
+
+/*收藏、喜欢*/
+.tool_favor{margin-top:30px;text-align:right;}
+.tool_favor .favor,.tool_favor .like{display:inline-block;height:20px;margin-left:20px;padding:9px 12px;border-radius:10px;border:1px solid #ff8900;font-size:16px;line-height:20px;color:#ff8900;text-align:center;outline: none}
+.tool_favor .icon{display:inline-block;margin-right:8px;vertical-align:middle;}
+.tool_favor .num{display:inline-block;margin-left:8px;padding-left:10px;border-left:1px solid #ff8900;font-size:17px;text-align:center;}
+.tool_favor .favor .icon{width:19px;height:15px;background:url(../images/icon_heart_0809.png) 0 0 no-repeat;}
+.tool_favor .favor.on .icon {background-position: -21px 0}
+.tool_favor .like .icon{width:21px;height:21px;background:url(../images/icon_up_0809.png) 0 0 no-repeat;}
+.tool_favor .like.on .icon {background-position: -23px 0}
+
+/*分享按钮*/
+.share_btns{margin:27px 30px 45px;font-size:16px;line-height:24px;color:#333;text-align:right;}
+.jiathis_style_24x24{display:inline-block;margin-left:20px;vertical-align:middle;}
+
+/*回复*/
+.reply_post{position:relative;background-color:#fff;overflow:hidden;}
+.reply_post .right{padding-bottom:40px;}
+.reply_post .editor_tools .tools{display:inline-block;margin-right:20px;vertical-align:middle;}
+.reply_post .form_item{margin-top:30px;}
+.reply_post .reply_textarea{width:100%;height:80px;padding:0;border:none;background-color:#fff;font-size:18px;line-height:1.4;color:#bbb;}
+.reply_post .reply_textarea:hover,.reply_post .reply_textarea:focus{color:#333;}
+.reply_post .reply_btn{display:inline-block;width:80px;height:40px;border-radius:5px;border:none;background-color:#ff8900;font-size:16px;color:#fff;line-height:40px;-webkit-transition:all .3s linear 0s;transition:all .3s linear 0s;}
+.reply_post .reply_btn:hover,.reply_post .reply_btn:active{background-color:#ff7e00;}
+
+/*锁定*/
+.locked_con{margin-top:22px;padding:10px 20px;border:1px dashed #ff8900;background-color:#fffced;font-size:18px;color:#ff6000;}
+.reply_tools{position:absolute;width:100%;bottom:0;left:0;border-top:1px solid #ddd;text-align:right;}
+.tool_lock{display:inline-block;margin-right:32px;line-height:50px;color:#ff8900;}
+.tool_lock:hover{color:#ff6000;}

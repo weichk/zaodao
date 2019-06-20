@@ -1,0 +1,114 @@
+/** bootstrap extentions */
+.nav>li:hover .dropdown-menu {
+	display: block;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+	{
+	background-color: #5CB85C
+}
+
+.glyphicon {
+	top: 2px;
+}
+
+.alert {
+	margin-bottom: 5px;
+	border: 0px solid transparent;
+}
+
+.alert-common {
+	background-repeat: repeat-x;
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #b2dba1;
+}
+
+.alert-error {
+	text-align: center;
+	background-repeat: repeat-x;
+	color: #ff0000;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+
+.breadcrumb{
+	margin:0;
+	padding:0;
+}
+.breadcrumb a.active{
+	color:#333;
+}
+.topnav .navbar {min-height: 40px;margin-bottom: 0;border-radius:0; }
+.topnav .nav > li > a {padding: 10px 15px;  }
+.topnav .navbar-inverse .navbar-nav>li>a { color: #92e892; }
+.topnav .navbar-inverse .navbar-nav>li>a:focus, .topnav .navbar-inverse .navbar-nav>li>a:hover {
+    color: #cdf5cd;
+    background-color: transparent;
+}
+.topnav .navbar-brand {padding: 8px 5px; height:auto;  }
+.topnav .navbar .container .navbar-brand {margin-left:0;}
+.topnav .navbar-text { margin-top: 10px; margin-bottom: 0;}
+.topnav .navbar-btn.btn-xs { margin-top: 8px; margin-bottom: 8px;}
+.poplogin {  padding: 0 0;}
+.poplogin .form-box {margin-top: 0;}
+.poplogin .form-top {
+	overflow: hidden;
+	padding: 0 25px 15px 25px;
+	background: #fff;
+	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+	text-align: left;
+}
+
+.poplogin .form-top-left {
+	float: left;
+	width: 75%;
+	padding-top: 20px;
+}
+
+.poplogin .form-top-left h3 { margin-top: 0; }
+
+.poplogin  .form-top-right {
+	float: left;
+	width: 25%;
+	padding-top: 5px;
+	font-size: 50px;
+	color: #ddd;
+	line-height: 63px;
+	text-align: right;
+}
+
+.poplogin .form-bottom {
+	padding: 25px 25px 25px 25px;
+	background: #eee;
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+
+.poplogin .form-control {     width: 100%; height: 34px; padding: 6px 12px;line-height: 1.42857143;}
+
+.poplogin  .form-bottom form textarea {
+	height: 100px;
+}
+
+.poplogin  .form-bottom form button.btn {width: 100%;}
+
+.poplogin .form-bottom form .form-captcha {
+	width:35%; display:inline-block;
+}
+.poplogin .form-group {margin-bottom: 22px;}
+
+.poplogin .Validform_wrong {
+	background: url(/images/wrong.png) 0 50% no-repeat;
+	padding-left: 20px;
+	color: #9b152c;
+}
+.poplogin .Validform_checktip {
+	top: 35px;
+    left: 40px;
+}
+.poplogin .Validform_checktip:after{
+	background: none;
+}
+
+

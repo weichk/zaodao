@@ -1,0 +1,64 @@
+/*重置layer.3.0.3弹窗样式*/
+.popup_login.layui-layer-page .layui-layer-content{overflow:visible}
+.layui-layer-setwin .layui-layer-close2{-webkit-transition:all 0s linear 0s;transition:all 0s linear 0s;}
+.layui-layer-shade{opacity:.5!important;filter:alpha(opacity=50)!important;}
+
+/*重置layer.1.8.5弹窗样式*/
+.xubox_page{width:100%;}
+.xubox_setwin .xubox_close0{-webkit-transition:none;transition:none;}
+
+/*login_content*/
+.login_content{height:890px;background:url(../images/login_bg.jpg) 50% 100% no-repeat;}
+.login_content .l{width:434px;float:left;margin-top:198px;}
+.login_content .login_box{width:290px;height:407px;float:right;margin-top:172px;padding:25px 35px 30px 25px;background-color:#fff;}
+
+/*tabnav*/
+.login_tabnav{position:relative;overflow:hidden;}
+.login_tabnav li{position:relative;width:50%;float:left;text-align:center;}
+.login_tabnav li a{display:block;font-size:24px;line-height:1.2;color:#333;}
+.login_tabnav .hover a{color:#ff8900;}
+.login_tabnav .line{position:absolute;width:2px;height:20px;top:5px;right:0;background-color:#ddd;}
+
+/*form public*/
+.login_form,.regist_form{padding-top:15px;}
+.login_con .title{padding-top:30px;font-size:24px;color:#fe6c00;font-weight:400;text-align:center;}
+.login_con input[type="text"],.login_con input[type="password"]{width:100%;height:46px;border:none;border-bottom:1px solid #999;font-size:18px;line-height:46px;color:#bbb;}
+.login_con input[type="text"]:focus,.login_con input[type="password"]:focus{border-bottom-color:#ff8900;color:#333;}
+.login_con .btn{display:block;width:200px;height:50px;margin:50px auto 0;border:none;border-radius:5px;background-color:#ff8900;font-size:20px;color:#fff;line-height:50px;-webkit-transition:all .3s linear 0s;transition:all .3s linear 0s;}
+.login_con .btn:hover{background-color:#ff7e00}
+
+/*tab login_form*/
+.login_form .form_item{position:relative;margin-top:20px;}
+.login_form .phone_num{text-indent:58px;}
+.login_form .form_item .login_phone{position:absolute;width:20px;height:28px;top:50%;left:0;margin-top:-14px;background:url(../images/login_phone.png) 0 0 no-repeat;z-index:1;}
+.login_form .pwd{text-indent:58px;}
+.login_form .form_item .login_key{position:absolute;width:16px;height:30px;top:50%;left:0;margin-top:-15px;background:url(../images/login_key.png) 0 0 no-repeat;z-index:1;}
+.login_form .setting{margin-top:20px;}
+.login_form .forget{float:right;}
+.valid_box{position:absolute;bottom:5px;right:0;white-space:nowrap;}
+.valid_box .valid_refresh{font-size:12px;color:#333;}
+.login_form .no_account{margin-top:25px;text-align:center;}
+.login_form .regist_rightnow{color:#ff8900;}
+
+/*tab regist_form*/
+.regist_form .form_item{position:relative;margin-top:15px;}
+.regist_form .get_sms{position:absolute;width:102px;border-left:2px solid #ddd;top:10px;right:0;font-size:16px;color:#ff8900;text-align:right;z-index:1;}
+.regist_form .btn{margin-top:30px}
+.regist_form .agree{font-size:14px;line-height:22px;color:#333;}
+
+/*服务协议弹窗*/
+.popup_service_rule{height:445px;padding-bottom:20px;background-color:#f8f8f8;overflow-y:scroll;}
+.popup_service_rule .con{margin:20px 10% 40px;}
+.popup_service_rule .con p{margin-bottom:1em;font-size:14px;line-height:1.4;color:#333;text-indent:2em;}
+.popup_service_rule .layui-layer-title{text-align:center;font-weight:700;}
+.popup_service_rule .t{padding:15px 0;font-size:18px;color:#333;text-align:center;}
+.xubox_title em{width:100%!important;left:0!important;text-align:center;}
+
+/*popup*/
+.popup_login .login_form,.popup_login .regist_form{margin:0 65px;padding-top:15px;}
+.popup_login .login_form .phone_num,.popup_login .login_form .pwd{text-indent:35px;}
+.popup_login .login_form .setting{text-align:right;}
+.popup_login .login_form .forget{float:none;}
+
+/*.popup_login .login_con .Validform_checktip{top:110%;left:0;padding:2px 10px;}*/
+.popup_login .login_con .btn{margin-top:25px;padding:0;}
